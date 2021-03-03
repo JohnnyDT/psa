@@ -2,7 +2,7 @@
 
 ![Python logo](/images/python-logo.png)
 
-Riesene ulohy z predmutu Python v sietovych aplikaciach.
+Riesene ulohy z predmetu Python v sietovych aplikaciach.
 
 ---
 ### CVICENIE 01
