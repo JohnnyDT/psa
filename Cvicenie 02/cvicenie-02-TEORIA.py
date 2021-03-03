@@ -60,7 +60,7 @@ print('------------------------------')
 
 # ZOZNAMY
 ## list []
-# utriedeny zoznam, ktory sa automatickz zvysuje alebo zmensuje
+# utriedeny zoznam, ktory sa automaticky zvysuje alebo zmensuje
 # moze obsahovat rozne typy premennnych 
 # je mozne menit, mazat, ...
 list1 = [1, 2, 'Ondrej', 3, 4, 5]
@@ -71,7 +71,8 @@ print('------------------------------')
 ## tuple ()
 # nemenny utriedeny zoznam
 # moze obsahovat rozne typy premennnych 
-# nie je mozne menit, mazat, ...
+# nie je mozne menit, mazat, pridavat
+# pre zmenu v tuple je potrebne ho napriklad prekonvertovat na list a potom naspat
 tup1 = (1, 2, 'Ondrej', 3, 4, 5)
 print(tup1)
 print(tup1[2])
