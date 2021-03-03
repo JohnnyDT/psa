@@ -16,6 +16,5 @@ def ciferny_sucet(cislo):
         vysledok += int(i)
 
     print(vysledok)
-    
 
 ciferny_sucet(11231)

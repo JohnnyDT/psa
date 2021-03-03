@@ -9,9 +9,7 @@
 # >>> print(prerob(12345678))
 # '12_345_678'
 
-from random import seed
-from random import randint
-seed(1)
+import random
 
 k = int(input("Zadaj k: "))
 
@@ -19,8 +17,8 @@ for i in range(10):
 
     sucet = 0
     while sucet < k:
-        vygenerovane_cislo = randint(1, 4)
-        print(str(vygenerovane_cislo) + ",", end=" ")
+        vygenerovane_cislo = random.randrange(1, 5)
+        print(str(vygenerovane_cislo) + ",", end = " ")
         sucet += vygenerovane_cislo
  
     if sucet == k:
