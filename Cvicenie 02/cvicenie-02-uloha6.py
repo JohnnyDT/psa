@@ -20,7 +20,7 @@ for i in range(10):
         vygenerovane_cislo = random.randrange(1, 5)
         print(str(vygenerovane_cislo) + ",", end = " ")
         sucet += vygenerovane_cislo
- 
+
     if sucet == k:
         print("  HURA")
     else:

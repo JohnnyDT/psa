@@ -26,4 +26,4 @@ def vyhod_none(arg1, arg2, arg3, arg4):
     novy_tuple = tuple(pomocny_list)
     return novy_tuple
 
-print(vyhod_none(None, 1, None, None))
+print(vyhod_none(None, 1, "aloha", None))
