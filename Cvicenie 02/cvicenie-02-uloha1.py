@@ -18,7 +18,7 @@ km_cielove = int(input("Zadaj cielovy pocet km: "))     # pocet cielovych km
 den = 1
 
 while km_odbehnute < km_cielove:
-    den = den + 1
+    den += 1
     km_odbehnute *= narast                              # Floating Point Math
 
 print("---> na " + str(den) + ".den prebehne " + str(round(km_odbehnute, 2)) + " km")
