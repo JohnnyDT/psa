@@ -16,7 +16,7 @@ print("\nULOHA 5 \n")
 
 def prerob(cislo):
 
-    novy_retazec = ('')
+    novy_retazec = ''
     retazec = str(cislo)
 
     x = len(retazec)             # dlzka povodneho retazca    
