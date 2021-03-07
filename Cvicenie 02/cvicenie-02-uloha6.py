@@ -1,13 +1,9 @@
 ## ULOHA 6
 # Budeme hrat takuto hru:
-# kladiel vedla seba do radu mince s nahodnymi hodnotami z <1, 4>
-# skoncim, ked ich sucet bude vacsi alebo rovnz danemu k
+# kladiem vedla seba do radu mince s nahodnymi hodnotami z <1, 4>
+# skoncim, ked ich sucet bude vacsi alebo rovny danemu k
 # Ak som skoncil so suctom, ktory je rovny k, vypise text 'HURA' inak 'SKODA'
-# Napiste program, ktorz tuto hru odsimuluje 10-krat a vypise to pod seba
-
-## Vystup pre k = 21 
-# >>> print(prerob(12345678))
-# '12_345_678'
+# Napiste program, ktory tuto hru odsimuluje 10-krat a vypise to pod seba.
 
 import random
 
