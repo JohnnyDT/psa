@@ -11,10 +11,10 @@
 
 print("\nULOHA 1 \n")
 
-narast = 1.1                                            # narast na dalsi den 10% (vynasobenie 1.1)
 km_odbehnute = int(input("Zadaj km pre prvy den: "))    # pocet km v prvy en
 km_cielove = int(input("Zadaj cielovy pocet km: "))     # pocet cielovych km
 
+narast = 1.1                                            # narast na dalsi den 10% (vynasobenie 1.1)
 den = 1
 
 while km_odbehnute < km_cielove:
