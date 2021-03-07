@@ -1,8 +1,8 @@
 ## ULOHA 1
-# Sportovec prve den prebehol x kilometro.
-# Kazdy dalsi den prebehol o 10% viac ako v predchadyajuci den.
+# Sportovec prvy den prebehol x kilometrov.
+# Kazdy dalsi den prebehol o 10% viac ako v predchadzajuci den.
 # Napiste program, ktory pre dane y zisti, v ktory den sportovec dokopy prebehne aspon y kilometrov.
-# (Ktory den prekroci planovanych cielovych zadanych KM)
+# (Ktory den konecne prekroci planovanych cielovych zadanych KM) --> nie spolu ale za jeden den
 
 ## Vystup:
 # Zadaj km pre prvy den: 10
