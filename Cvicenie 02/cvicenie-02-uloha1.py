@@ -21,4 +21,7 @@ den = 1
 while km_nasledujuci_den < km_cielove:
     den = den + 1
     km_nasledujuci_den = km_nasledujuci_den * narast
-    print("\tna " + str(den) + ".den prebehne " + str(km_nasledujuci_den) + " km")
+
+print("---> na " + str(den) + ".den prebehne " + str(round(km_nasledujuci_den, 2)) + " km")
+
+# Floating Point Math
