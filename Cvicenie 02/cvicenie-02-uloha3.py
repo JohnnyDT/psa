@@ -14,16 +14,14 @@
 
 print("\nULOHA 3 \n")
 
-def vyhod_none(arg1, arg2, arg3, arg4):
+def vyhod_none(*args):              # function recieve a TUPLE of arguments
 
-    zadany_tuple = (arg1, arg2, arg3, arg4)
     pomocny_list = []
 
-    for i in zadany_tuple:
+    for i in args:
         if i != None:
             pomocny_list.append(i)
 
-    novy_tuple = tuple(pomocny_list)
-    return novy_tuple
+    return tuple(pomocny_list)
 
-print(vyhod_none(None, 1, "aloha", None))
+print(vyhod_none(None, 1, "aloha", None, -4588, "Peter"))
