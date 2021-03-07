@@ -25,7 +25,7 @@ def prerob(cislo):
         novy_retazec += retazec[x]
         if x % 3 == 2:
             novy_retazec += "_"
-    
+
     return novy_retazec [::-1]    
     #   [::-1] ----> vypis odzadu 
     #   [start:end:step]
