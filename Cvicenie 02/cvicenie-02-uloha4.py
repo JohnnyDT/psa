@@ -8,13 +8,12 @@
 print("\nULOHA 4 \n")
 
 def ciferny_sucet(cislo):
-
-    zadane_cislo = str(cislo)
+    
     vysledok = 0
 
-    for i in zadane_cislo:
+    for i in str(cislo):
         vysledok += int(i)
 
     print(vysledok)
 
-ciferny_sucet(11231)
+ciferny_sucet(12345)
