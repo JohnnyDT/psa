@@ -6,11 +6,13 @@
 
 import datetime
 
+#jednoriadkove riesenie
+print("Ahoj " + input("Meno: ") + ", tvoj vek je: " + str((datetime.date.today().year) - int(input("Rok narodenia: "))))
+
 #kratsie riesenie
 meno = input("Meno: ")
 vek2 = (datetime.date.today().year) - int(input("Rok narodenia: "))
 print("Ahoj " + meno + ", tvoj vek je: " + str(vek2) )
-
 
 # krajsie riesenie
 aktualny_rok = datetime.date.today().year
