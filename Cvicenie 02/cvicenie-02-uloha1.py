@@ -22,3 +22,5 @@ while km_odbehnute < km_cielove:
     km_odbehnute *= narast                              # Floating Point Math
 
 print("---> na " + str(den) + ".den prebehne " + str(round(km_odbehnute, 2)) + " km")
+print("---> na", den, ".den prebehne", round(km_odbehnute, 2), "km")
+print("---> na {}.den prebehne {} km".format(den, round(km_odbehnute, 2)))
