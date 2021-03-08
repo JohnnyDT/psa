@@ -1,4 +1,4 @@
-## ULOHA 1
+## ULOHA 2
 # Napiste funkciu zoznam_cisel(retazec), ktora z daneho retazca vyrobi zoznam celych cisel.
 
 ## Vystup:
@@ -14,4 +14,3 @@ def zoznam_cisel(retazec):
 
 a = zoznam_cisel('12 345 6 -78 9000')
 print(a)
-
