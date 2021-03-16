@@ -25,6 +25,7 @@ sock.bind(("127.0.0.1", 9998))
 sock.listen(10)
 
 while True:
+    
     (clientSock, clientAddr) = sock.accept()
     sprava = clientSock.recv(1500)
 
