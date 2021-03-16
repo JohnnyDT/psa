@@ -18,20 +18,33 @@ class bcolors:
 import os
 import sys
 
+os.system("clear")
+
+
 repo_path = "D:/Google Disk/FRI (Google Drive)/FRI - PREDMETY/BC/PV, V predmety/PSA - Python v sieťových aplikáciach/Git"
 repo_name = "/psa-git"
 repo_url = "https://github.com/JohnnyDT/psa-git.git"
 
-def git_status(path, rname):
+def git_add_file(path, rname, fname):                   #! GIT ADD
+    os.chdir(path + rname)
+    os.system("git add " + fname)
+
+def git_commit_changes(path, rname, fname, message):    #! GIT COMMIT
+    os.chdir(path + rname)
+    os.system("git commit " + fname + " -m \"" + message + "\"")
+
+def git_status(path, rname):                            #! GIT STATUS
     os.chdir(path + rname)
     os.system("git status")
 
-def git_status_add_commit_push(path, rname, message):
+def git_push(path, rname):                              #! GIT PUSH
+    os.chdir(path + rname)
+    os.system("git push")
+
+def git_status_add_commit_push(path, rname, message):   #! GIT STATUS+ADD+COMMIT+PUSH
     os.chdir(path + rname)
 
-    os.system("clear")
-
-    output_file = "output.txt"                      # zadefinujem si nazov suboru
+    output_file = "output.txt"                     # zadefinujem si nazov suboru
 
     if os.path.exists(output_file):                 # ak taky subor existuje - zmazem ho
         os.remove(output_file)
@@ -49,23 +62,28 @@ def git_status_add_commit_push(path, rname, message):
             untracked_files.append(i[3:-1])         
 
     if untracked_files:
-        print(f"{bcolors.HEADER}\nUNTRACKED FILES:{bcolors.ENDC}")                     # vypis untracked files
+        print(f"{bcolors.HEADER}\nUNTRACKED FILES:{bcolors.ENDC}")      # vypis untracked files
 
     for j in untracked_files:
         print(f"{bcolors.WARNING}FILE: " + j + f"{bcolors.ENDC}")
 
     for k in range(len(untracked_files)):           #
-    #? GIT ADD file
+    #! GIT ADD file
         print(f"{bcolors.OKGREEN}\n---> git add " + untracked_files[k] + f"\n{bcolors.ENDC}")
-        os.system("git add " + untracked_files[k])
+        git_add_file(path, rname, untracked_files[k])
+        #os.system("git add " + untracked_files[k])
         
-    #? GIT COMMIT
+    #! GIT COMMIT
         print(f"{bcolors.OKGREEN}\n---> git commit " + untracked_files[k] + " -m \"" + message + f"\" \n{bcolors.ENDC}")
-        os.system("git commit " + untracked_files[k] + " -m \"" + message + "\"")
+        git_commit_changes(path, rname, untracked_files[k], message)
+        #os.system("git commit " + untracked_files[k] + " -m \"" + message + "\"")
 
     if untracked_files:
         print(f"{bcolors.OKGREEN}\n---> git push\n{bcolors.ENDC}")
 
-    os.system("git push")
+    git_push(path, rname)
+    #os.system("git push")
 
+# ---------------------------------------------------------------
+print("\n--------------------GIT--------------------\n")
 git_status_add_commit_push(repo_path, repo_name, "Uprava suboru.")
