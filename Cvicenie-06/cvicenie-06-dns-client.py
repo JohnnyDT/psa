@@ -1,5 +1,6 @@
 import socket
 import struct
+import ipaddress
 
 DNS_SERVER = "8.8.8.8"
 DNS_PORT = 53
@@ -34,7 +35,20 @@ CLASS = socket.htons(0x0001)                # INTERNET
 querry_end = struct.pack('hh', TYPE, CLASS)
 
 sock = socket.socket(family = socket.AF_INET, type = socket.SOCK_DGRAM)
+sock.bind(("", 50000))
 
 sock.sendto(header + querry_body + querry_end, (DNS_SERVER, DNS_PORT))
+
+# ---------------------------------------------
+
+response, addr = sock.recvfrom(1024)
+
+resp_byte = response[3:4]           # 4. bajt
+
+
+if (int.from_bytes(resp_byte, byteorder = "big") % 2 == 0):
+    print(str(ipaddress.ip_address(response[-4:])))        # posledne 4 
+else:
+    print("Chyba v odpovedi.")
 
 sock.close()
