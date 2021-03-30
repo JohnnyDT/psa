@@ -31,8 +31,6 @@ def napoveda():
     print("  \\h - prikaz vypis napovedu")
     print(" Spravu odosielajte v tvare: nick:sprava")
 
-
-
 def odosli():
     sprava = Sprava(nick, "Jozko", "", "Text z Buttonu")
     jsonStr = json.dumps(sprava.__dict__)
