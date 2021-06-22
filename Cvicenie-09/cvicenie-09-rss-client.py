@@ -1,13 +1,17 @@
 # RSS client
+
 import urllib.request 
+# https://docs.python.org/3/library/urllib.request.html
+
 import xml.etree.ElementTree as ET
 
 import tkinter as tk
 
 def getRssText(paURL):    
     returnText = ''
-
     raw_page = urllib.request.urlopen(paURL)
+    # Open the URL url, which can be either a string or a Request object.
+
     page = raw_page.read()
 
     root = ET.fromstring(page)
