@@ -19,7 +19,6 @@ Cvičenia a úlohy z predmetu Python v sieťových aplikáciach.
 <li>09 - RSS klient</li>
 <li>10 - Router SSH - Cisco</li>
 <li>11 - Router SSH - Mikrotik</li>
-<li>12 - ?</li>
 </ul>
 
 ---
